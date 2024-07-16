@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  min-height: 100%;
+  background-color: #000000;
+}
+
+/* navbar */
+.head {
+  top: 0;
+  position: fixed;
+  min-height: 60px;
+  width: 100vw;
+  background-color: #f7f700;
+  z-index: 1;
+  box-shadow: 0px 1px 20px 10px #93930059;
+}
+
+.nav-btn {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3e3e13;
+}
+.nav-btn:hover {
+  color: #000000;
+  font-weight: 500;
+}
+
+.nav-btn-right {
+  box-shadow: 0px 1px 15px 1px #00000036;
+  font-size: 15px;
+  color: #f7f700;
+  background-color: rgb(21, 21, 21);
+  border: none;
+  border-radius: 16px;
+}
+.nav-btn-right:hover {
+  background-color: #292929;
+}
+.active {
+  font-weight: 600;
+  color: black;
+}
+
+/* heroes */
+
+.heroes {
+  background-image: url(./Resources/images/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+/* .heroes{
+ background-color: #1f1f1f ;
+  height: 90vh;
+} */
+@media (max-width: 768px) {
+  body {
+    font-size: 22px;
+  }
+  .heroes {
+    margin-top: 125px;
+    height: fit-content;
+    background-color: #1f1f1f;
+    background-image: none;
+  }
+  .main {
+    width: 100%;
+  }
+}
+.btn-yellow:hover {
+  font-weight: 400;
+  background-color: #1f1f1f;
+  color: #d7d7d7;
+}
+
+.btn-yellow {
+  box-shadow: 0px 1px 20px 1px #000000;
+  border: none;
+  color: black;
+  background-color: #f7f700;
+  font-weight: 500;
+}
+.btn-join {
+  box-shadow: 0px 1px 20px 1px #000000;
+  border: none;
+  font-weight: 500;
+  background-color: transparent;
+  color: white;
+}
+.btn-join:hover {
+  background-color: #353535;
+  color: white;
+  font-weight: 500;
+}
+
+.text-white {
+  color: white;
+}
+.bg-Jumbotron {
+  background-color: #f7f700;
+}
+.font-weight {
+  font-weight: 400;
+}
+.main-text {
+  font-size: 700%;
+  font-family: "Stick No Bills", sans-serif;
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: #f7f700;
+  -webkit-text-fill-color: #000000;
+}
+
+.main {
+  align-items: flex-start;
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
+  .main-text {
+    font-size: 63px;
+    -webkit-text-fill-color: #1f1f1f;
+  }
+  .heroes {
+    height: 100vh;
+  }
+}
+@media (min-width: 992px) {
+  .heroes {
+    margin-top: 70px;
+    height: 100vh;
+  }
+  body {
+    font-size: 20px;
+  }
+}
+
+/* Features */
+
+.Features {
+  background-color: #f7f700;
+}
+.Features > div > div > h3 {
+  font-weight: 900;
+}
+.Features > div > div > h6 {
+  font-weight: 700;
+  font-size: 70%;
+}
+.Features > div > div > p {
+  font-size: 75%;
+  font-weight: 500;
+}
+
+/* jumbotron */
+
+.bg-Jumbotron {
+  border-top: 3em solid #000000;
+  border-bottom: 3em solid #000000;
+}
+.bg-white {
+  background-color: white;
+}
+.jumbotron-main {
+  font-size: 220%;
+  font-weight: 600;
+}
+
+/* pricing */
+
+.pricing {
+  background-color: black;
+}
+.card-header {
+  background-color: #f7f700;
+}
+.card-header > h4 {
+  font-weight: 500;
+}
+.pricing-title {
+  font-weight: 500;
+  font-size: 3.5vw;
+  color: #f7f700;
+}
+.text-secondary {
+  font-size: 2vw;
+}
+
+/* Trainer */
+
+.trainer-img1 {
+  height: 20rem;
+  background-image: url(./Resources/images/Trainer/daniel-azmanov.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 0px #0000008c;
+}
+
+.trainer-img2 {
+  height: 25rem;
+  background-image: url(./Resources/images/Trainer/gabin-vallet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 0px #0000008c;
+}
+.trainer-img3 {
+  height: 20rem;
+  background-image: url(./Resources/images/Trainer/Jabol-vallet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 0px #0000008c;
+}
+.album {
+  align-items: center;
+  padding-top: 5%;
+  background-color: white;
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+.intro-main {
+  text-align: center;
+}
+.text-part {
+  padding-top: 5.5em;
+  padding-bottom: 3.5em;
+  background-color: #f7f700;
+}
+
+.trainer-text {
+  color: white;
+  font-size: 95%;
+  text-align: end;
+}
+
+/* Contact */
+
+.bg-yellow {
+  background-image: url(./Resources/images/dumble.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  opacity: 85%;
+}
+.call-text {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 95%;
+}
+.number-text {
+  color: #ffffff;
+  font-size: 165%;
+  font-weight: 600;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #f7f700;
+}
+
+
+.list-style {
+  list-style: none;
+  gap: 1em;
+  justify-content: center;
+}
+.list-style a{
+  color: black;
+  
+}
+.copyright{
+  padding-left: 25px;
+  display: flex;
+  justify-content: center;
+  font-size: 55%;
+  align-items: center;
+}
